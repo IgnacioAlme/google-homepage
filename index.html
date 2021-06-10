@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<style>
+    li {
+        list-style: none;
+    }
+
+    #logo {
+        display: block;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    #search-bar {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .centered {
+        font-size: small;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        z-index: 10;
+    }
+
+    footer li {
+        padding-top: 5px;
+    }
+
+    footer>ul {
+        width: 35vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #izquierda {
+        display: flex;
+        margin-left: 2rem;
+    }
+
+    #derecha {
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    #country {
+        position: fixed;
+        display: flex;
+        bottom: auto;
+    }
+</style>
+
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+</head>
+<div>
+    <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+</div>
+
+<body>
+    <div id="search">
+        <form id="search-bar">
+            <input type="text"></input>
+            <br>
+            <br>
+            <button type="button">Buscar con Google</button>
+            <button type="button">Voy a tener Suerte</button>
+        </form>
+    </div>
+    <div>
+        <p class="centered">Ofrecido por Google en: English</p>
+    </div>
+    <p id="country">Argentina</p>
+    <footer>
+        <div id="izquierda">
+            <ul>
+                <li>Sobre Google</li>
+                <li>Publicidad</li>
+                <li>Negocios</li>
+                <li>Cómo funciona la búsqueda</li>
+            </ul>
+        </div>
+        <div id="derecha">
+            <ul>
+                <il>Privacidad</il>
+                <il>Condiciones</il>
+                <il>Preferencias</il>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
